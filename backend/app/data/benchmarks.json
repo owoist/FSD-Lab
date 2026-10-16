@@ -1,0 +1,8 @@
+[
+  {"benchmark_id": "global_avg", "label": "Global average", "annual_per_capita_tco2e": 4.7,
+   "source": "PLACEHOLDER - verify (e.g. Our World in Data / Global Carbon Project)"},
+  {"benchmark_id": "india_avg", "label": "India average", "annual_per_capita_tco2e": 2.0,
+   "source": "PLACEHOLDER - verify"},
+  {"benchmark_id": "paris_2030", "label": "1.5°C-aligned target (~2030)", "annual_per_capita_tco2e": 2.3,
+   "source": "PLACEHOLDER - verify"}
+]
