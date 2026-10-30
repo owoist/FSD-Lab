@@ -1,0 +1,20 @@
+{
+  "name": "ecometrics-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix frontend run build",
+    "start": "concurrently -n backend,frontend -c blue,green \"npm:start:backend\" \"npm:start:frontend\"",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend start",
+    "fix": "oxlint --fix . && oxfmt ."
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0"
+  }
+}
